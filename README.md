@@ -9,4 +9,7 @@
 - [x] Primer commit con la estructura base súbelo al remoto (github).
 - [x] Commits sucesivos (desarrollar checklist)
 - [x] Diagrama UML .svg con PlantUML
-- [ ] Inserción del diagrama en el README.md con '![Diagrama de clases](uml/diagrama_clases.svg)'
+- [x] Inserción del diagrama en el README.md:
+  
+ # DIAGRAMA DE CLASES COMPLETO:
+ ![Diagrama de clases](uml/diagrama_clases.svg)
