@@ -1,0 +1,4 @@
+@startuml
+class MScooter extends Moto {
+}
+@enduml

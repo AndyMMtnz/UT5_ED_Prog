@@ -1,0 +1,4 @@
+@startuml
+class Coche extends Vehiculo {
+}
+@enduml
