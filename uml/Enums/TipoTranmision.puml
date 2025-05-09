@@ -1,4 +1,6 @@
 @startuml
-enum TipoTranmision {
+enum TipoTransmision {
+MANUAL
+AUTOMATICA
 }
 @enduml

@@ -2,6 +2,5 @@
 class InterfazValorable {
 interface Valorable {
 +double calcularDepreciacion()
-
 }
 @enduml

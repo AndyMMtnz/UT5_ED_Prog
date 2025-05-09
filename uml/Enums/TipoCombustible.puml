@@ -1,4 +1,8 @@
 @startuml
 enum TipoCombustible {
+GASOLINA
+DIESEL
+HIBRIDO
+ELECTRICO
 }
 @enduml
