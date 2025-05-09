@@ -1,4 +1,18 @@
 @startuml
 class Moto extends Vehiculo {
+-cilindrada : int
+-peso : int
+-alturaAsiento : double
+-tipoTransmision : TipoTransmision
+
++Moto(String matricula, String marca, String modelo, int anioFabricacion, int kilometraje, double precio, EstadoVehiculo estado, Persona propietario, int cilindrada, int peso, double alturaAsiento, TipoTransmision tipoTransmision)
++int getCilindrada()
++void setCilindrada(int cilindrada)
++int getPeso()
++void setPeso(int peso)
++double getAlturaAsiento()
++void setAlturaAsiento(double alturaAsiento)
++TipoTransmision getTipoTransmision()
++void setTipoTransmision(TipoTransmision tipoTransmision)
 }
 @enduml

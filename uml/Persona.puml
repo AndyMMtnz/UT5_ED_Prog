@@ -4,9 +4,9 @@ class Persona {
 -apellidos : String
 -DNI : String
 -fechaCaducidadCarnet : Date
--añoNacimiento : int
+-anioNacimiento : int
 
-+Persona(String nombre, String apellidos, String DNI, Date fechaCaducidadCarnet, int añoNacimiento)
++Persona(String nombre, String apellidos, String DNI, Date fechaCaducidadCarnet, int anioNacimiento)
 +String getNombre()
 +void setNombre(String nombre)
 +String getApellidos()
@@ -15,8 +15,8 @@ class Persona {
 +void setDNI(String DNI)
 +Date getFechaCaducidadCarnet()
 +void setFechaCaducidadCarnet(Date fechaCaducidadCarnet)
-+int getAñoNacimiento()
-+void setAñoNacimiento(int añoNacimiento)
++int getAnioNacimiento()
++void setAnioNacimiento(int anioNacimiento)
 +int calcularExperiencia()
 }
 @enduml

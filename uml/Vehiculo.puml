@@ -3,21 +3,21 @@ abstract class Vehiculo {
 -matricula : String
 -marca : String
 -modelo : String
--añoFabricacion : int
+-anioFabricacion : int
 -kilometraje : int
 -precio : double
 -estado : EstadoVehiculo
 -propietario : Persona
 
-+Vehiculo(String matricula, String marca, String modelo, int añoFabricacion, int kilometraje, double precio, EstadoVehiculo estado, Persona propietario)
++Vehiculo(String matricula, String marca, String modelo, int anioFabricacion, int kilometraje, double precio, EstadoVehiculo estado, Persona propietario)
 +String getMatricula()
 +void setMatricula(String matricula)
 +String getMarca()
 +void setMarca(String marca)
 +String getModelo()
 +void setModelo(String modelo)
-+int getAñoFabricacion()
-+void setAñoFabricacion(int añoFabricacion)
++int getAnioFabricacion()
++void setAnioFabricacion(int anioFabricacion)
 +int getKilometraje()
 +void setKilometraje(int kilometraje)
 +double getPrecio()

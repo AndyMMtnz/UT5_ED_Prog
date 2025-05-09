@@ -1,4 +1,18 @@
 @startuml
 class Camion extends Vehiculo {
+-capacidadCarga : double
+-numEjes : int
+-longitudRemolque : double
+-potenciaMotor : int
+
++Camion(String matricula, String marca, String modelo, int anioFabricacion, int kilometraje, double precio, EstadoVehiculo estado, Persona propietario, double capacidadCarga, int numEjes, double longitudRemolque, int potenciaMotor)
++double getCapacidadCarga()
++void setCapacidadCarga(double capacidadCarga)
++int getNumEjes()
++void setNumEjes(int numEjes)
++double getLongitudRemolque()
++void setLongitudRemolque(double longitudRemolque)
++int getPotenciaMotor()
++void setPotenciaMotor(int potenciaMotor)
 }
 @enduml

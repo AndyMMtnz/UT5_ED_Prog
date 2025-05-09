@@ -1,4 +1,12 @@
 @startuml
 class MDeportiva extends Moto {
+-velocidadMaxima : double
+-tieneQuickShifter : boolean
+
++MDeportiva(String matricula, String marca, String modelo, int anioFabricacion, int kilometraje, double precio, EstadoVehiculo estado, Persona propietario, int cilindrada, int peso, double alturaAsiento, TipoTransmision tipoTransmision, double velocidadMaxima, boolean tieneQuickShifter)
++double getVelocidadMaxima()
++void setVelocidadMaxima(double velocidadMaxima)
++boolean getTieneQuickShifter()
++void setTieneQuickShifter(boolean tieneQuickShifter)
 }
 @enduml

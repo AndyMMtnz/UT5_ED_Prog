@@ -1,4 +1,12 @@
 @startuml
-class Sedan extends Coche {
+class CSedan extends Coche {
+-espacioInterior : double
+-nivelConfort : NivelConfort
+
++CSedan(String matricula, String marca, String modelo, int anioFabricacion, int kilometraje, double precio, EstadoVehiculo estado, Persona propietario, int numPuertas, TipoCombustible tipoCombustible, int capacidadMaletero, Traccion traccion, double espacioInterior, NivelConfort nivelConfort)
++double getEspacioInterior()
++void setEspacioInterior(double espacioInterior)
++NivelConfort getNivelConfort()
++void setNivelConfort(NivelConfort nivelConfort)
 }
 @enduml

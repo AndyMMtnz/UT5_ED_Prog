@@ -1,4 +1,15 @@
 @startuml
 class CDeportivo extends Coche {
+-aceleracion0a100 : double
+-potenciaCV : int
+-tieneModoPista : boolean
+
++CDeportivo(String matricula, String marca, String modelo, int anioFabricacion, int kilometraje, double precio, EstadoVehiculo estado, Persona propietario, int numPuertas, TipoCombustible tipoCombustible, int capacidadMaletero, Traccion traccion, double aceleracion0a100, int potenciaCV, boolean tieneModoPista)
++double getAceleracion0a100()
++void setAceleracion0a100(double aceleracion0a100)
++int getPotenciaCV()
++void setPotenciaCV(int potenciaCV)
++boolean getTieneModoPista()
++void setTieneModoPista(boolean tieneModoPista)
 }
 @enduml

@@ -1,4 +1,12 @@
 @startuml
-class SUV extends Coche {
+class CSUV extends Coche {
+-capacidadOffroad : boolean
+-alturaLibreSuelo : double
+
++CSUV(String matricula, String marca, String modelo, int anioFabricacion, int kilometraje, double precio, EstadoVehiculo estado, Persona propietario, int numPuertas, TipoCombustible tipoCombustible, int capacidadMaletero, Traccion traccion, boolean capacidadOffroad, double alturaLibreSuelo)
++boolean getCapacidadOffroad()
++void setCapacidadOffroad(boolean capacidadOffroad)
++double getAlturaLibreSuelo()
++void setAlturaLibreSuelo(double alturaLibreSuelo)
 }
 @enduml

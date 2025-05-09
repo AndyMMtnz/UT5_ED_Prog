@@ -1,4 +1,18 @@
 @startuml
 class Coche extends Vehiculo {
+-numPuertas : int
+-tipoCombustible : TipoCombustible
+-capacidadMaletero : int
+-traccion : Traccion
+
++Coche(String matricula, String marca, String modelo, int anioFabricacion, int kilometraje, double precio, EstadoVehiculo estado, Persona propietario, int numPuertas, TipoCombustible tipoCombustible, int capacidadMaletero, Traccion traccion)
++int getNumPuertas()
++void setNumPuertas(int numPuertas)
++TipoCombustible getTipoCombustible()
++void setTipoCombustible(TipoCombustible tipoCombustible)
++int getCapacidadMaletero()
++void setCapacidadMaletero(int capacidadMaletero)
++Traccion getTraccion()
++void setTraccion(Traccion traccion)
 }
 @enduml

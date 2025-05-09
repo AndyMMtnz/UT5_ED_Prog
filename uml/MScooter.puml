@@ -1,4 +1,9 @@
 @startuml
 class MScooter extends Moto {
+-espacioBajoAsiento : int
+
++MScooter(String matricula, String marca, String modelo, int anioFabricacion, int kilometraje, double precio, EstadoVehiculo estado, Persona propietario, int cilindrada, int peso, double alturaAsiento, TipoTransmision tipoTransmision, int espacioBajoAsiento)
++int getEspacioBajoAsiento()
++void setEspacioBajoAsiento(int espacioBajoAsiento)
 }
 @enduml
