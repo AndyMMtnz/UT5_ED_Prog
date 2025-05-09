@@ -1,4 +1,22 @@
 @startuml
 class Persona {
+-nombre : String
+-apellidos : String
+-DNI : String
+-fechaCaducidadCarnet : Date
+-añoNacimiento : int
+
++Persona(String nombre, String apellidos, String DNI, Date fechaCaducidadCarnet, int añoNacimiento)
++String getNombre()
++void setNombre(String nombre)
++String getApellidos()
++void setApellidos(String apellidos)
++String getDNI()
++void setDNI(String DNI)
++Date getFechaCaducidadCarnet()
++void setFechaCaducidadCarnet(Date fechaCaducidadCarnet)
++int getAñoNacimiento()
++void setAñoNacimiento(int añoNacimiento)
++int calcularExperiencia()
 }
 @enduml

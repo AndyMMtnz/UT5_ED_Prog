@@ -1,4 +1,31 @@
 @startuml
 abstract class Vehiculo {
+-matricula : String
+-marca : String
+-modelo : String
+-añoFabricacion : int
+-kilometraje : int
+-precio : double
+-estado : EstadoVehiculo
+-propietario : Persona
+
++Vehiculo(String matricula, String marca, String modelo, int añoFabricacion, int kilometraje, double precio, EstadoVehiculo estado, Persona propietario)
++String getMatricula()
++void setMatricula(String matricula)
++String getMarca()
++void setMarca(String marca)
++String getModelo()
++void setModelo(String modelo)
++int getAñoFabricacion()
++void setAñoFabricacion(int añoFabricacion)
++int getKilometraje()
++void setKilometraje(int kilometraje)
++double getPrecio()
++void setPrecio(double precio)
++EstadoVehiculo getEstado()
++void setEstado(EstadoVehiculo estado)
++Persona getPropietario()
++void setPropietario(Persona propietario)
+
 }
 @enduml
