@@ -1,0 +1,46 @@
+@startuml
+
+!include Vehiculo.puml
+!include Coche.puml
+!include Moto.puml
+!include Camion.puml
+!include Persona.puml
+!include InterfazValorable.puml
+!include CSedan.puml
+!include CSUV.puml
+!include CDeportivo.puml
+!include MScooter.puml
+!include MDeportiva.puml
+!include Enums/EstadoVehiculo.puml
+!include Enums/NivelConfort.puml
+!include Enums/TipoCombustible.puml
+!include Enums/TipoTransmision.puml
+!include Enums/Traccion.puml
+
+' Relación de propiedad entre Vehiculo y Persona (un coche puede tener dueño o estar en venta)
+Vehiculo --> Persona : propietario
+
+' Implementación de la interfaz Valorable en Vehiculo
+Vehiculo ..|> Valorable
+
+' Herencia de Vehiculo en los tipos específicos
+Coche --|> Vehiculo
+Moto --|> Vehiculo
+Camion --|> Vehiculo
+
+' Herencia de Coche en los subtipos
+CSedan --|> Coche
+CSUV --|> Coche
+CDeportivo --|> Coche
+
+' Herencia de Moto en los subtipos
+MScooter --|> Moto
+MDeportiva --|> Moto
+
+' Asociación de enums con las clases que los usan
+Vehiculo --> EstadoVehiculo
+Coche --> TipoCombustible
+Moto --> TipoTransmision
+Coche --> Traccion
+
+@enduml
