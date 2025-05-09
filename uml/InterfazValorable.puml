@@ -1,6 +1,5 @@
 @startuml
-class InterfazValorable {
-interface Valorable {
+interface InterfazValorable {
 +double calcularDepreciacion()
 }
 @enduml

@@ -21,26 +21,14 @@
 Vehiculo --> Persona : propietario
 
 ' Implementación de la interfaz Valorable en Vehiculo
-Vehiculo ..|> Valorable
-
-' Herencia de Vehiculo en los tipos específicos
-Coche --|> Vehiculo
-Moto --|> Vehiculo
-Camion --|> Vehiculo
-
-' Herencia de Coche en los subtipos
-CSedan --|> Coche
-CSUV --|> Coche
-CDeportivo --|> Coche
-
-' Herencia de Moto en los subtipos
-MScooter --|> Moto
-MDeportiva --|> Moto
+Vehiculo ..|> InterfazValorable
 
 ' Asociación de enums con las clases que los usan
 Vehiculo --> EstadoVehiculo
 Coche --> TipoCombustible
 Moto --> TipoTransmision
 Coche --> Traccion
+CSedan --> NivelConfort
+
 
 @enduml
